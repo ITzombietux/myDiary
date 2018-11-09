@@ -12,9 +12,11 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var textInput: UITextField!
 //    @IBOutlet weak var textLabel: UILabel!
+    
     @IBOutlet weak var textArea: UITextView!
     
 //    @IBOutlet weak var contentLabel: UILabel!
+    
     @IBAction func buttonPressed(_ sender: Any) {
         let text = textInput.text
 //        textLabel.text = text
@@ -22,11 +24,13 @@ class ViewController: UIViewController {
         let content = textArea.text
 //        contentLabel.text = content
         
-//        let article = Article(context: context)
-//        article.title = text
-//        article.content = content
+        let article = Article(context: context)
+        article.title = text
+        article.content = content
 //        article.createdAt = NSData()
-//        appDele.saveContext()
+        article.createdAt = NSDate()
+        appDele.saveContext()
+        navigationController?.popViewController(animated: true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

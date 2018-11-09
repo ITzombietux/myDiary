@@ -18,23 +18,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="일기장" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A06-BB-6ge">
-                                <rect key="frame" x="136" y="320" width="102" height="47"/>
+                                <rect key="frame" x="136.5" y="320" width="102" height="47"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="highlightedColor" red="1" green="0.1621696748" blue="0.1016630817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="curry" translatesAutoresizingMaskIntoConstraints="NO" id="h5E-E4-ng6">
+                                <rect key="frame" x="67" y="82" width="230" height="230"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="A06-BB-6ge" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Uqz-m3-k19"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h5E-E4-ng6" secondAttribute="trailing" constant="78" id="ZoG-9Q-cL4"/>
                             <constraint firstItem="A06-BB-6ge" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="d1Q-tG-2Cy"/>
+                            <constraint firstItem="h5E-E4-ng6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="h0b-J7-YGj"/>
+                            <constraint firstItem="h5E-E4-ng6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="juE-FT-IkX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h5E-E4-ng6" secondAttribute="bottom" constant="355" id="rud-ps-wPY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="curry" width="112.5" height="112.5"/>
+    </resources>
 </document>
